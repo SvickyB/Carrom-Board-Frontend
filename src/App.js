@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import CarromBoard from './component/CarromBoard';
 import socket from './services/websocket';
 
+const apiUrl = process.env.REACT_APP_BACKEND_URL;
+
 function App() {
   const [gameId, setGameId] = useState(null);
   const [currentPlayer, setCurrentPlayer] = useState('Player 1');
